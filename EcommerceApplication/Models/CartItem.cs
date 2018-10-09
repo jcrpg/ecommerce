@@ -15,8 +15,10 @@ namespace EcommerceApplication.Models
 
         public int? Quantity { get; set; }
 
+        [Column(TypeName ="decimal(18,2)")]
         public decimal? UnitPrice { get; set; }
 
+        [Column(TypeName ="decimal(18,2)")]
         public decimal? Price { get; set; }
 
         public int? CustomerId { get; set; }

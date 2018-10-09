@@ -14,8 +14,10 @@ namespace EcommerceApplication.Models
 
         public int? Quantity { get; set; }
 
+        [Column(TypeName ="decimal(18,2)")]
         public decimal UnitPrice { get; set; }
         [Range(1,100,ErrorMessage ="Price must be between {0} and {1}")]
+        [Column(TypeName ="decimal(18,2)")]
         public decimal? Price { get; set; }
 
         public int? OrderId { get; set; }

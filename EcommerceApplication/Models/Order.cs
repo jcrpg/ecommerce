@@ -19,6 +19,7 @@ namespace EcommerceApplication.Models
 
         public DateTime? OrderDate { get; set; }
 
+        [Column(TypeName ="decimal(18,2)")]
         public decimal OrderTotal { get; set; }
 
         public int CustomerId { get; set; }

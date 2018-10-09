@@ -23,6 +23,7 @@ namespace EcommerceApplication.Models
 
         public string Detail { get; set; }
 
+        [Column(TypeName ="decimal(18,2)")]
         public decimal UnitPrice { get; set; }
 
         public int? UnitsInStock { get; set; }
